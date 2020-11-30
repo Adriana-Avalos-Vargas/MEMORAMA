@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Memorama inicio</title>
+     <meta charset="utf-8">
+     <meta name="viewport", content="width=device-width, initial.scale=1, shrink-to-fit=no">
+     <meta http-equiv = "x-ua-compatible" content="ie-edge">
+     <title>CSS Stylesheets with Relative Paths</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ </head> 
+ 
+ <!--start the body-->
+ <body>
+    <!--Define a fluid container that adjust to any screen size-->
+    <div class="container.fluid">
+        <!--Add another container to "center" content-->
+        <div class = "container-fluid">
+
+        <!-- Add a title page and a square-->
+            <div class="p-3 mb-2 bg-info text-white text-center">
+                <header>
+                    <h1 class="display-4">Memorama de animales </h1>
+                </header>
+            </div>
+            
+        <!-- End the title page and a square-->
+
+        
+        <!--Beggining of contents-->
+        <!-- Start intro paragraph here start home page -->
+        <br>
+            <article>
+                <p class="text-info text-xl-center"> ¡Bienvenido! Para iniciar el juego presional el siguiente boton</p>
+
+            </article>
+        <!-- End intro paragraph -->
+        <br>
+         <!--add a button-->
+         <div class="text-center">
+            <button type="button" value= "startGame" class="btn btn-info btn-lg" id="start" onclick="handleClick()" >
+                Iniciar
+            </button>
+         </div>
+        <br>
+        <!-- Item Heading -->
+        <!-- Table with the game  -->
+        <table class="table">
+          <tbody>
+            <!--first row-->
+            <tr>
+            <td>
+                <button class="btn" id="imagen" value = "1" onclick="gC1(this.id, this.value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid', id="img1">
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "2" onclick="gC2(this.id, this.value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "3" onclick="gC3(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "4" onclick="gC4(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            </tr>
+            <!--Second row-->
+            <tr>
+            <th>
+                <button class="btn" id="imagen" value = "5" onclick="gC5(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </th>
+            <td>
+                <button class="btn" id="imagen" value = "6" onclick="gC6(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>                
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "7" onclick="gC7(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "8" onclick="gC8(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            </tr>
+            <!--THIRD ROW-->
+            <tr>
+            <th>
+                <button class="btn" id="imagen" value = "9" onclick="gC9(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </th>
+            <td>
+                <button class="btn" id="imagen" value = "10" onclick="gC10(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "11" onclick="gC11(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "12" onclick="gC12(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            </tr>
+            <!--Fourth row-->
+            <tr>
+            <th>
+                <button class="btn" id="imagen" value = "13" onclick="gC13(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </th>
+            <td>
+                <button class="btn" id="imagen" value = "14" onclick="gC14(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "15" onclick="gC15(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            <td>
+                <button class="btn" id="imagen" value = "16" onclick="gC16(this, value)">
+                    <img src="assets\imagenes\Imagen1.png" style='float:left' class='img-fluid'>
+                </button>
+            </td>
+            </tr>
+        </tbody>
+</table>
+        
+        <br>
+        <br>
+       
+                
+           
+        <!-- space -->
+        <br>
+        <br>
+        <!--space-->
+
+        <!-- define a style for a footer -->
+        <style>
+            .footer {
+                position: float;
+                bottom: 0;
+                width: 100%;
+                background-color: LightGray;
+                color: black;
+                text-align: center;
+            }
+        </style>
+        <!-- end definition of footer style -->
+        <!-- add a divition with class footer -->
+        <div class="footer">
+            <p>Page Designed with Bootstrap by Adriana Avalos Vargas.</p>
+        </div>
+        <!-- End of footer -->
+
+        
+        
+        
+        
+    <!--End  of the fluid containers, do not errase-->
+        </div>
+    </div>
+<!--End of the body do not errase-->
+    <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+ </body>
+ 
+</html>
